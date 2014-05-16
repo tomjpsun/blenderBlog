@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Blender Diary
+subtitle: Blender is amazing!
+author: Ching-Ping Sun
 simple_search: http://google.com/search
-description:
+description: Write down the exploration of my Blender! my Tresure!
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in

@@ -1,0 +1,29 @@
+* + table th, * + table td {
+  border-style:dashed;
+  border-width:1px;
+  border-color:#007eff;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+ 
+* + table th {
+  border-style:solid;
+  font-weight:bold;
+  background-color:#d2e8ff;
+}
+
+* + table tr:hover{
+    background-color:#c4e4fe;
+} 
+
+* + table th[align="left"], * + table td[align="left"] {
+  text-align:left;
+}
+ 
+* + table th[align="right"], * + table td[align="right"] {
+  text-align:right;
+}
+ 
+* + table th[align="center"], * + table td[align="center"] {
+  text-align:center;
+}
