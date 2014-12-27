@@ -6,7 +6,7 @@ comments: true
 categories: normal map, bake
 ---
 
-The detailed steps is listed in the [introduction by Jonathan Williamson](source/_posts/2014-08-01-baking-normal-map-from-high-poly-mesh-to-low-poly-mesh.markdown).
+The detailed steps is listed in the [introduction by Jonathan Williamson](http://cgcookie.com/blender/2010/06/30/normal_maps_blender_2_5/).
 
 If you bake out a plain UV map, please __DO CHECK__ that the high poly mesh should be __at the same position__ with the low poly mesh. Like Paul said in the discussion in that article.
 
