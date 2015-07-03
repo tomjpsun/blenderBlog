@@ -9,15 +9,18 @@ categories:
 
 這裏我們要 bake displacement 與 bake ambient occlusion 兩種圖。
 
-* 1 Bake 之前要先 UV unwrap，將來所有的 bake 都會在這個 UV image  上面
-* 2 Bake  Displacement 時，如果勾選 Bake from Multires ，且得到灰色均一的圖，可能是 MultiRes Modifier 的 preview level 與 sculpt level 相等 造成的，把 preview level 與 sculpt level 相差愈多，就得到愈高解析度的 DISP
-* 3 Bake 需要有一個 default world ，若沒有，會報錯，這時 create 一個 world 就好了
-* 4 Bake 的 margin 若為 0 ，可能將來貼上去會有隙縫，系統內定為 2 ，表示 bake 會超過 UV map 邊界 2 pixels，以防止上述現象。
+* Bake 之前要先 UV unwrap，將來所有的 bake 都會在這個 UV image  上面
+* Bake Displacement 時，如果勾選 Bake from Multires ，且得到灰色均一的圖，可能是 MultiRes Modifier 的 preview level 與 sculpt level 相等 造成的，把 preview level 與 sculpt level 相差愈多，就得到愈高解析度的 DISP, 但, 如果 preview level 設定到 0, 會得到一格格的結果, 也不對
+* 如果得到 error: Multires data baking requires multiresolution object 的錯誤訊息，就表示 Modifier stack 上面的 multires 不是最上層，可以把在它上面所有的 modifier 的 render 關掉
+<img src="http://coding-addict.com/pictures/blender/turn off render on modifiers stack.png" alt="Drawing" style="width: 800px;"/>
+* Bake 需要有一個 default world ，若沒有，會報錯，這時 create 一個 world 就好了
+* Bake 的 margin 若為 0 ，可能將來貼上去會有隙縫，系統內定為 2 ，表示 bake 會超過 UV map 邊界 2 pixels，以防止上述現象。
 <!--More-->
 <img src="http://coding-addict.com/pictures/blender/blender material WIP 1.png" alt="Drawing" style="width: 800px;"/>
 
-* 5 Bake Ambient Occlusion 後，UV Image Editor 的 Image 選項會有 * 符號，把它存檔為 bake_AO.png
-* 6 Bake Displacement 後存為 bake_DISP.png
+* Bake Displacement 如果沒選 bake from multires 就會得到一片黑色的 displacement
+* Bake Ambient Occlusion 後，UV Image Editor 的 Image 選項會有 * 符號，把它存檔為 bake_AO.png
+* Bake Displacement 後存為 bake_DISP.png
 
 #Paint#
 
@@ -73,4 +76,4 @@ categories:
 
 <img src="http://coding-addict.com/pictures/blender/blender material WIP 13.png" alt="Drawing" style="width: 300px;"/>
 
-重要觀念：__選單的`Replace image`可以重新設定這個物件在 paint mode 時對應到的 paint image__ (也就是說，這個物件進入 paint mode 時，image editor 將會自動顯示出它所對應到的 paint image)。
+小秘訣：__選單的`Replace image`可以重新設定這個物件在 paint mode 時對應到的 paint image__ (也就是說，這個物件進入 paint mode 時，image editor 將會自動顯示出它所對應到的 paint image)。
