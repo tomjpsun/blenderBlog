@@ -1,0 +1,24 @@
+---
+layout: post
+title: "New wishes in 2015"
+date: 2015-01-05 16:54:04 +0800
+comments: true
+categories: diary
+---
+新年新希望，[Alexandrov 的部落格](http://www.creativeshrimp.com/getting-started-with-digital-art-01) 很熱血的提供了 CG 的學習經驗。而且也驗證了 __
+最好的學習，就是分享__ 這句話！
+
+這篇入門的心得分享有幾個重點：
+
+1. 每天都要學習：建議觀看影片教學。他推薦 [Blender Guru](http://www.blenderguru.com/) 與 [Blender CG](http://cgcookie.com/blender/)
+2. 做就對了，用Blender實現我們的想像力。
+3. 分享就是學習最好的方式，持續在網路上分享學習經驗與成果，是最快的學習方法。
+
+話是不錯，但是我初學者，分享沒有價值的內容，會不會太浪費網路資源了啊啊...？
+
+接觸 Blender 一年多了，一直沒有好好學會用它，心裡有些愧疚，藉著這個新年新希望，要對自己許願：希望今年努力實現上面的重點，做一些好的作品出來。
+
+
+
+
+
