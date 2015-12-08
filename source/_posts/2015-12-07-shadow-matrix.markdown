@@ -6,7 +6,7 @@ comments: true
 categories: math
 ---
 尋找如何做出 Shadow matrix 的過程中，發現 [HOTBALL'S HIVE](http://www.csie.ntu.edu.tw/~r89004/hive/shadow/page_1.html) 介紹得很好。但是有些推導過程，中間的步驟很簡明，對於新手的我來說，還是得拿紙筆來演練，才能順利接上，在此作個筆記。這裡的圖片引用自該網頁。
-
+<!--More-->
 目的：給定光源，在已知平面上 （以 normal vector **P** 表示）找出平面以外某一點 **V** ，在平面上的投影點，然後導出其 Matrix Operation。
 
 ![Project Diagram](http://www.csie.ntu.edu.tw/~r89004/hive/shadow/images/proj.jpg)
@@ -55,9 +55,13 @@ categories: math
 \langle V_x,V_y,V_z,1 \rangle (aL_x + bL_y + cL_z) - (aV_x + bV_y + cV_z + d) \langle L_x,L_y,L_z,0 \rangle 
 \end{align}
 
+上式 x 分量為： 
+
 \begin{align}
-上式 x 分量為： V_x(bL_y + cL_z) - V_y(bL_x) - V_z(cL_x) - dL_x \newline，同法可得 y,z 分量。
+V_x(bL_y + cL_z) - V_y(bL_x) - V_z(cL_x) - dL_x \newline
 \end{align}
+
+，同法可得 y,z 分量。
 
 \begin{align}
 整理得到M_{shadow} = \begin{bmatrix} bL_y + cL_z & -bL_x & -cL_x & -dL_x \cr -aL_y & aL_x + cL_z & -cL_y & -dL_y \cr -aL_z & -bL_z & aL_x + bL_y & -dL_z \cr 0 & 0 & 0 & aL_x + bL_y + cL_z \end{bmatrix} 
