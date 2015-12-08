@@ -11,20 +11,21 @@ categories: math
 
 ![Project Diagram](http://www.csie.ntu.edu.tw/~r89004/hive/shadow/images/proj.jpg)
 
-首先，從 (**V** + k**L**).**P** = 0 開始。
-
-\begin{align}\( \vec V \) + k\( \vec L \) = \(\vec 0\)
+首先，從
+\begin{align}\( \vec V \) + k\( \vec L \) 
 \end{align}
 
-如圖，沿著射線，存在ㄧ k 值，使得
 
-\begin{align}\( \vec V \) + k\( \vec L \) 
+開始: 如圖，沿著射線，存在ㄧ k 值，使得
+
+\begin{align}\( \vec V \) + k\( \vec L \) = \vec 0
 \end{align}
 
 為平面上的交點：
 
 \begin{align}(\vec V + k \vec L) \cdot \vec P = 0 
-\mid k = -\frac{\vec V \cdot \vec P}{\vec L \cdot \vec P} 
+\end{align} 
+\begin{align} k = -\frac{\vec V \cdot \vec P}{\vec L \cdot \vec P} 
 \end{align} 
 
 所以投影點為：
@@ -41,7 +42,7 @@ categories: math
  \langle x,y,z,w \rangle 
 \end{align} 
 而言，w 是分母之意， 亦即對應的 3D coordinate 為
-\begin{align}  \langle x/w, y/w, z/w \rangle 
+\begin{align}  \langle \frac{x}{w}, \frac{y}{w}, \frac{z}{w} \rangle 
 ， 也就是 \( \vec L \cdot \vec P \)  
 \end{align}
 
@@ -55,11 +56,18 @@ categories: math
 \end{align}
 
 \begin{align}
-其中 \(x\) 分量為： V_x(bL_y + cL_z) - V_y(bL_x) - V_z(cL_x) - dL_x 同法可得 \(y,z\) 分量，
+上式 x 分量為： V_x(bL_y + cL_z) - V_y(bL_x) - V_z(cL_x) - dL_x \newline，同法可得 y,z 分量。
 \end{align}
 
 \begin{align}
-整理得到 shadow matrix: \begin{bmatrix} bL_y + cL_z & -bL_x & -cL_x & -dL_x \cr -aL_y & aL_x + cL_z & -cL_y & -dL_y \cr -aL_z & -bL_z & aL_x + bL_y & -dL_z \cr 0 & 0 & 0 & aL_x + bL_y + cL_z \end{bmatrix} 
+整理得到M_{shadow} = \begin{bmatrix} bL_y + cL_z & -bL_x & -cL_x & -dL_x \cr -aL_y & aL_x + cL_z & -cL_y & -dL_y \cr -aL_z & -bL_z & aL_x + bL_y & -dL_z \cr 0 & 0 & 0 & aL_x + bL_y + cL_z \end{bmatrix} 
 \end{align}
+
+所以空間中任意一點 V 的投影為：
+
+\begin{align}
+M_{shadow} \cdot \vec V
+\end{align}
+
 
 內心獨白：\begin\{align}LaTeX 打了會上癮！\end{align}
