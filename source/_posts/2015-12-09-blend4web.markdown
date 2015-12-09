@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "360 Panoramic With Blender"
+title: "Blend4Web 十分鐘入門"
 date: 2015-12-09 15:42:22 +0800
 comments: true
 categories: 
