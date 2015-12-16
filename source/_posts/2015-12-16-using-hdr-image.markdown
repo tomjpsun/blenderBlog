@@ -47,5 +47,4 @@ In Blender
 
 <img src="http://coding-addict.com/pictures/blender/set camera to make HDR image 2.png" alt="Drawing" style="width: 300px;"/>
 
-<img src="http://coding-addict.com/pictures/blender/set render resolution to make HDR image
-.png" alt="Drawing" style="width: 300px;"/>
+<img src="http://coding-addict.com/pictures/blender/set render resolution to make HDR image.png" alt="Drawing" style="width: 300px;"/>
