@@ -6,7 +6,8 @@ comments: true
 categories: hotkey, shortcut
 ---
 
-__自訂 render mode 切換 hotkey: __
+__自訂 render mode 切換 hotkey: __ 的方法：
+<!--More-->
 
 <img src="http://coding-addict.com/pictures/blender/render mode hotkey.png" alt="Drawing" style="width: 600px;"/>
 

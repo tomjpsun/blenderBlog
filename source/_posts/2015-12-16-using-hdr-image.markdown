@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 用 HDR image 當作背景是很方便的事, 步驟太簡單, 以至於出問題時, 估狗竟然找不到... 啊 我就遇到了！
-
+<!--More-->
 下載 HDR images:
 ---
 

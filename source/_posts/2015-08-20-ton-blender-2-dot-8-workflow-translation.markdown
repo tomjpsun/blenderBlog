@@ -5,9 +5,16 @@ date: 2015-08-20 08:57:18 +0800
 comments: true
 categories: translation
 ---
+以下是 Ton 對於 2.8 的開發藍圖, 原文在此 
+
+[https://code.blender.org/2015/07/blender-2-8-the-workflow-release/](https://code.blender.org/2015/07/blender-2-8-the-workflow-release/)
+
+我用破破的英文能力翻譯如下, 希望對想了解的人有幫助:
+<!--More-->
+
 Blender 2.8 開發流程
 
-這份初稿，是未來一年 blender.org 的工作重點.
+這份提案，是未來一年 blender.org 的工作重點.
 我曾經寫過了，因為我們一直錯失最大的開發目的--我們沒有足夠的時間開發大型計畫。
 相反的, 花了太多時間釋出版本，修臭蟲，複審程式，維護與支援某些專題。
 這些工作使得優秀的開發者沒法子從事他們自己的目標，也沒有時間去設計文件，

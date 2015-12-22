@@ -5,9 +5,12 @@ date: 2015-12-09 15:42:22 +0800
 comments: true
 categories: 
 ---
+
 準備動作：
 
 安裝 Blend4Web [https://github.com/TriumphLLC/Blend4Web](https://github.com/TriumphLLC/Blend4Web), 到那裡把 source （右上 .zip 按鈕）下載回來, 假設放在 ～/Documents/Blend4Web/ 目錄, 目前他支援 2.76 以後的版本(2.75 以前會出現 warning) 
+
+<!--More-->
 
 安裝：
 
